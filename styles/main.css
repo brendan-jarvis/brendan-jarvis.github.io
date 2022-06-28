@@ -1,6 +1,24 @@
-body{
-  background-color: #2e2e2e;
-  color: #d6d6d6;
+/* Monokai theme root */
+:root{
+  --monokai-background: #272822;
+  --monokai-foreground: #f8f8f2;
+  --monokai-black: #272822;
+  --monokai-red: #f92672;
+  --monokai-green: #a6e22e;
+  --monokai-yellow: #e6db74;
+  --monokai-blue: #66d9ef;
+  --monokai-purple: #9a66d9;
+  --monokai-cyan: #3cb878;
+  --monokai-white: #f8f8f2;
+  --monokai-orange: #fd971f;
+  --monokai-pink: #ff55ff;
+  --monokai-grey: #2e2e2e;
+}
+
+
+body {
+  background-color: var(--monokai-background);
+  color: var(--monokai-white);
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -9,4 +27,12 @@ body{
 
 p {
   text-align: justify;
+  margin-bottom: 1em;
+}
+
+.thick-yellow-border {
+  border: 2px solid var(--monokai-yellow);
+  border-radius: 50%;
+  padding: 10px;
+  margin: 10px;
 }

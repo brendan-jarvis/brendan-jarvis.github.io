@@ -15,7 +15,6 @@
   --monokai-grey: #2e2e2e;
 }
 
-
 body {
   background-color: var(--monokai-background);
   color: var(--monokai-white);
@@ -25,9 +24,32 @@ body {
   text-align: center;
 }
 
+h1{
+  font-size: 2em;
+  font-weight: normal;
+  margin: 0;
+  color: var(--monokai-red);
+}
+
+h2{
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 0;
+  color: var(--monokai-orange);
+}
+
+h3{
+  font-size: 1.25em;
+  font-weight: normal;
+  margin: 0;
+  color: var(--monokai-yellow);
+}
+
 p {
   text-align: justify;
+  margin-top: 0;
   margin-bottom: 1em;
+  color: var(--monokai-white);
 }
 
 .thick-yellow-border {

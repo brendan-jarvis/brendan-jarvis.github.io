@@ -1,18 +1,21 @@
 /* Solarized theme :root */
 :root {
-  --solarized-background: #002b36;
-  --solarized-foreground: #839496;
-  --solarized-black: #002b36;
-  --solarized-red: #dc322f;
-  --solarized-green: #859900;
-  --solarized-yellow: #b58900;
-  --solarized-blue: #268bd2;
-  --solarized-purple: #6c71c4;
-  --solarized-cyan: #2aa198;
+  --solarized-brgreen: #586e75;
+  --solarized-black: #073642;
+  --solarized-brblack: #002b36;
+  --solarized-bryellow: #657b83;
+  --solarized-brblue: #839496;
+  --solarized-brcyan: #93a1a1;
   --solarized-white: #eee8d5;
+  --solarized-brwhite: #fdf6e3;
+  --solarized-yellow: #b58900;
   --solarized-orange: #cb4b16;
-  --solarized-pink: #d33682;
-  --solarized-grey: #073642;
+  --solarized-red: #dc322f;
+  --solarized-magenta: #d33682;
+  --solarized-violet: #6c71c4;
+  --solarized-blue: #268bd2;
+  --solarized-cyan: #2aa198;
+  --solarized-green: #859900;
 }
 
 body {
@@ -23,7 +26,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: var(--solarized-background);
+  background-color: var(--solarized-white);
 }
 
 /* Style the navigation */
@@ -52,13 +55,12 @@ footer {
   width: 80%;
   padding: 20px;
   border: 1px solid var(--solarized-blue);
-  background-color: var(--solarized-foreground);
+  background-color: var(--solarized-brwhite);
 }
 
 /* Distinguish the footer from the body */
 footer {
   color: var(--solarized-green);
-  background-color: var(--solarized-black);
   text-align: center !important; /* override the default justified text */
 }
 
@@ -93,9 +95,9 @@ h3 {
 
 /* change colour of links */
 a:link {
-  color: var(--solarized-pink);
+  color: var(--solarized-magenta);
 }
 
 a:visited {
-  color: var(--solarized-purple);
+  color: var(--solarized-magenta);
 }

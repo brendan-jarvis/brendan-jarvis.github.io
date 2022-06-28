@@ -17,23 +17,20 @@
 
 body {
   color: var(--solarized-black);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Terminus', 'Monaco', 'Bitstream Vera Sans Mono', monospace;
   font-size: 16px;
   line-height: 1.5;
+  margin: 0;
+  padding: 0;
   text-align: center;
   background-color: var(--solarized-background);
 }
 
-/* Responsive @media screen for mobile users */
-@media screen and (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-}
-
 /* Style the navigation */
 nav a {
-  color: var(--solarized-black) !important; /* Prevent override of color by link styling */
+  color: var(
+    --solarized-black
+  ) !important; /* Prevent override of color by link styling */
   font-size: 1.25em;
   font-weight: bolder;
   padding: 10px;
@@ -44,7 +41,7 @@ p {
   text-align: justify;
 }
 
-li{
+li {
   text-align: left;
 }
 

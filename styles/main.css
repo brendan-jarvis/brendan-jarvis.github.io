@@ -1,70 +1,102 @@
-/* Solarized theme :root to setup CSS Variables */
+/* Color scheme :root to setup CSS Variables */
 :root {
-  --solarized-brgreen: #586e75;
-  --solarized-black: #073642;
-  --solarized-brblack: #002b36;
-  --solarized-bryellow: #657b83;
-  --solarized-brblue: #839496;
-  --solarized-brcyan: #93a1a1;
-  --solarized-white: #eee8d5;
-  --solarized-brwhite: #fdf6e3;
-  --solarized-yellow: #b58900;
-  --solarized-orange: #cb4b16;
-  --solarized-red: #dc322f;
-  --solarized-magenta: #d33682;
-  --solarized-violet: #6c71c4;
-  --solarized-blue: #268bd2;
-  --solarized-cyan: #2aa198;
-  --solarized-green: #859900;
+  --teal: #2b6777;
+  --blue: #c8d8e4;
+  --black: #000000; /* Allows easy switching to a different black/white */
+  --white: #ffffff;
+  --grey: #f2f2f2;
+  --aquamarine: #52ab98;
+}
+
+* {
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
 }
 
 body {
-  color: var(--solarized-black);
+  color: var(--black);
   font-family: 'Terminus', 'Monaco', 'Bitstream Vera Sans Mono', monospace; /* Switch to Monospace fonts */
-  font-size: 14pt;
+  font-size: 16pt;
   line-height: 1.5;
-  margin: 0; /* Reset default margin */
-  padding: 0; /* Reset default padding */
   text-align: center; /* Reset default text alignment */
-  background-color: var(--solarized-white);
+  background-color: var(--white);
 }
 
 /* This should target small-sized display devices e.g. mobile devices and tablets */
 @media screen and (max-width: 768px) {
   body {
-    font-size: 12pt; /* Reduce font size */
+    font-size: 14pt; /* Reduce font size */
   }
 
-  /* Switch to a vertical navigation bar */
   nav a {
+    /* Switch to vertical navigation layout */
     display: block;
+    margin: 0 auto !important;
+    padding: 0 auto !important;
+
+    background-color: var(--teal);
+    color: var(
+      --blue
+    ) !important; /* Prevent override of color by link styling */
+    font-size: 1.25em;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+
+  /* Invert colors of navigation links on hover */
+  nav a:hover {
+    background-color: var(--blue);
+    color: var(--teal) !important;
   }
 }
 
 /* This should target medium-sized display devices e.g. small screens and laptops */
 
-/* One rule is enough for now, this may be useful later */
+@media screen and (max-width: 1200px) {
+  nav a {
+    /* Switch to vertical navigation layout */
+    display: block;
+    margin: 0 auto !important;
+    padding: 0 auto !important;
 
-/* @media screen and (max-width: 1200px) {
-} */
+    background-color: var(--teal);
+    color: var(
+      --blue
+    ) !important; /* Prevent override of color by link styling */
+    font-size: 1.25em;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+
+  /* Invert colors of navigation links on hover */
+  nav a:hover {
+    background-color: var(--blue);
+    color: var(--teal) !important;
+  }
+}
 
 /* This should target larger displays e.g. desktops and TVs */
-/* @media screen and (min-width: 1201px) {
-} */
+@media screen and (min-width: 1201px) {
+  nav a {
+    background-color: var(--white);
+    color: var(
+      --teal
+    ) !important; /* Prevent override of color by link styling */
+    font-size: 1.25em;
+    font-weight: bolder;
+    text-decoration: none;
+  }
 
-/* Style the navigation */
-nav a {
-  color: var(
-    --solarized-black
-  ) !important; /* Prevent override of color by link styling */
-  font-size: 1.25em;
-  font-weight: bolder;
-  padding: 10px;
-  margin: 10px;
+  /* Invert colors of navigation links on hover */
+  nav a:hover {
+    background-color: var(--teal);
+    color: var(--blue) !important;
+  }
 }
 
 p {
   text-align: justify;
+  margin-bottom: 1em;
 }
 
 li {
@@ -78,14 +110,14 @@ footer {
   margin: 0 auto;
   width: 80%;
   padding: 1.5em;
-  border: 1px solid var(--solarized-blue);
-  background-color: var(--solarized-brwhite);
+  border: 1px solid var(--blue);
+  background-color: var(--white);
 }
 
 /* Style the cards */
 .card {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 var(--teal);
   transition: 0.3s;
   width: 50%;
   margin-top: 2em;
@@ -94,7 +126,11 @@ footer {
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 var(--teal);
+}
+
+.card a {
+  text-decoration: none;
 }
 
 .container {
@@ -103,8 +139,12 @@ footer {
 
 /* Distinguish the footer from the body */
 footer {
-  color: var(--solarized-green);
-  text-align: center !important; /* override the default justified text */
+  font-size: smaller;
+  border: none;
+}
+
+footer p {
+  text-align: center;
 }
 
 /* Scale image with screen size */
@@ -118,34 +158,32 @@ h1 {
   font-size: 2em;
   font-weight: bolder;
   margin: 0;
-  color: var(--solarized-red);
+  color: var(--teal);
 }
 
 h2 {
   font-size: 1.5em;
   font-weight: bold;
   margin: 0;
-  color: var(--solarized-orange);
+  color: var(--aquamarine);
 }
 
 h3 {
   font-size: 1.25em;
   font-weight: normal;
   margin: 0;
-  color: var(--solarized-yellow);
 }
 
 h4 {
   font-size: 1em;
   font-weight: bold;
   margin: 0;
-  color: var(--solarized-blue);
 }
 
 /* Class to create rounded images with a thick cyan border */
 .thick-cyan-border {
-  border: 0px solid var(--solarized-cyan);
-  background-color: var(--solarized-cyan);
+  border: 0px solid var(--aquamarine);
+  background-color: var(--aquamarine);
   border-radius: 50%;
   padding: 10px;
   margin: 10px;
@@ -153,11 +191,9 @@ h4 {
 
 /* Change colour of links from default colouring */
 a:link {
-  color: var(--solarized-magenta);
-  text-decoration: none;
+  color: var(--teal);
 }
 
 a:visited {
-  color: var(--solarized-magenta);
-  text-decoration: none;
+  color: var(--aquamarine);
 }

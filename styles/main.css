@@ -1,4 +1,4 @@
-/* Solarized theme :root */
+/* Solarized theme :root to setup CSS Variables */
 :root {
   --solarized-brgreen: #586e75;
   --solarized-black: #073642;
@@ -20,13 +20,28 @@
 
 body {
   color: var(--solarized-black);
-  font-family: 'Terminus', 'Monaco', 'Bitstream Vera Sans Mono', monospace;
+  font-family: 'Terminus', 'Monaco', 'Bitstream Vera Sans Mono', monospace; /* Switch to Monospace fonts */
   font-size: 16px;
   line-height: 1.5;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+  text-align: center; /* Reset default text alignment */
   background-color: var(--solarized-white);
+}
+
+/* This should target small-sized display devices e.g. iPhones */
+@media screen and (max-width:767px) {
+
+}
+
+/* This should target medium-sized display devices e.g. iPads */
+@media screen and (max-width:1199px) { 
+   
+}
+
+/* This should target larger displays e.g. on PC */
+@media screen and (min-width:1200px) {
+
 }
 
 /* Style the navigation */
@@ -53,7 +68,7 @@ article,
 footer {
   margin: 0 auto;
   width: 80%;
-  padding: 20px;
+  padding: 1.5em;
   border: 1px solid var(--solarized-blue);
   background-color: var(--solarized-brwhite);
 }
@@ -64,6 +79,13 @@ footer {
   text-align: center !important; /* override the default justified text */
 }
 
+/* Scale image with screen size */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style headers by changing their size, font-weight, and colours */
 h1 {
   font-size: 2em;
   font-weight: bolder;
@@ -85,6 +107,14 @@ h3 {
   color: var(--solarized-yellow);
 }
 
+h4 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+  color: var(--solarized-blue);
+}
+
+/* Class to create rounded images with a thick yellow border */
 .thick-yellow-border {
   border: 0px solid var(--solarized-yellow);
   background-color: var(--solarized-yellow);
@@ -93,7 +123,7 @@ h3 {
   margin: 10px;
 }
 
-/* change colour of links */
+/* Change colour of links from default colouring */
 a:link {
   color: var(--solarized-magenta);
 }

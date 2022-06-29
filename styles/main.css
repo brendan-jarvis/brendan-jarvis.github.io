@@ -81,8 +81,8 @@ footer {
 
 /* Scale image with screen size */
 img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  max-height: auto;
 }
 
 /* Style headers by changing their size, font-weight, and colours */

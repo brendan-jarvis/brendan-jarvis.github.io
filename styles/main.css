@@ -73,12 +73,32 @@ li {
 
 header,
 article,
+.card,
 footer {
   margin: 0 auto;
   width: 80%;
   padding: 1.5em;
   border: 1px solid var(--solarized-blue);
   background-color: var(--solarized-brwhite);
+}
+
+/* Style the cards */
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 50%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
 }
 
 /* Distinguish the footer from the body */

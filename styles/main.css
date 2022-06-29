@@ -21,7 +21,7 @@
 body {
   color: var(--solarized-black);
   font-family: 'Terminus', 'Monaco', 'Bitstream Vera Sans Mono', monospace; /* Switch to Monospace fonts */
-  font-size: 16px;
+  font-size: 14pt;
   line-height: 1.5;
   margin: 0; /* Reset default margin */
   padding: 0; /* Reset default padding */
@@ -29,17 +29,28 @@ body {
   background-color: var(--solarized-white);
 }
 
-/* This should target small-sized display devices e.g. iPhones */
-@media screen and (max-width: 767px) {
+/* This should target small-sized display devices e.g. mobile devices and tablets */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 12pt; /* Reduce font size */
+  }
+
+  /* Switch to a vertical navigation bar */
+  nav a {
+    display: block;
+  }
 }
 
-/* This should target medium-sized display devices e.g. iPads */
-@media screen and (max-width: 1199px) {
-}
+/* This should target medium-sized display devices e.g. small screens and laptops */
 
-/* This should target larger displays e.g. on PC */
-@media screen and (min-width: 1200px) {
-}
+/* One rule is enough for now, this may be useful later */
+
+/* @media screen and (max-width: 1200px) {
+} */
+
+/* This should target larger displays e.g. desktops and TVs */
+/* @media screen and (min-width: 1201px) {
+} */
 
 /* Style the navigation */
 nav a {

@@ -30,18 +30,15 @@ body {
 }
 
 /* This should target small-sized display devices e.g. iPhones */
-@media screen and (max-width:767px) {
-
+@media screen and (max-width: 767px) {
 }
 
 /* This should target medium-sized display devices e.g. iPads */
-@media screen and (max-width:1199px) { 
-   
+@media screen and (max-width: 1199px) {
 }
 
 /* This should target larger displays e.g. on PC */
-@media screen and (min-width:1200px) {
-
+@media screen and (min-width: 1200px) {
 }
 
 /* Style the navigation */
@@ -114,10 +111,10 @@ h4 {
   color: var(--solarized-blue);
 }
 
-/* Class to create rounded images with a thick yellow border */
-.thick-yellow-border {
-  border: 0px solid var(--solarized-yellow);
-  background-color: var(--solarized-yellow);
+/* Class to create rounded images with a thick cyan border */
+.thick-cyan-border {
+  border: 0px solid var(--solarized-cyan);
+  background-color: var(--solarized-cyan);
   border-radius: 50%;
   padding: 10px;
   margin: 10px;

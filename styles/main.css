@@ -38,7 +38,7 @@ body {
     color: var(
       --blue
     ) !important; /* Prevent override of color by link styling */
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: bolder;
     text-decoration: none;
   }
@@ -63,7 +63,7 @@ body {
     color: var(
       --blue
     ) !important; /* Prevent override of color by link styling */
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: bolder;
     text-decoration: none;
   }
@@ -78,12 +78,11 @@ body {
 /* This should target larger displays e.g. desktops and TVs */
 @media screen and (min-width: 1201px) {
   nav a {
-    display: inline-block;
     background-color: var(--white);
     color: var(
       --teal
     ) !important; /* Prevent override of color by link styling */
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: bolder;
     text-decoration: none;
   }
@@ -97,11 +96,13 @@ body {
 
 p {
   text-align: justify;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
 li {
   text-align: left;
+  margin-left: 1em; /* Indent list items same as justified p text */
 }
 
 header,

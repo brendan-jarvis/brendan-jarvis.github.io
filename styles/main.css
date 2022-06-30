@@ -125,6 +125,10 @@ footer {
   margin-bottom: 2em;
 }
 
+.card-container {
+  position: relative;
+}
+
 /* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 var(--teal);
@@ -177,8 +181,9 @@ h3 {
 
 h4 {
   font-size: 1em;
-  font-weight: bold;
+  font-weight: lighter;
   margin: 0;
+  color: var(--black);
 }
 
 /* Class to create rounded images with a thick cyan border */

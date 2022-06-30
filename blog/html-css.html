@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/styles/main.css" />
+    <meta charset="UTF-8" />
+    <title>Brendan Jarvis | Tech</title>
+    <meta name="description" content="Brendan Jarvis' blog" />
+    <meta name="author" content="Brendan Jarvis" />
+  </head>
+
+  <body>
+    <nav>
+      <h2>Brendan Jarvis</h2>
+      <ul>
+        <a href="/index.html">Home</a>
+        <a href="/blog/blog.html">Blog</a>
+      </ul>
+    </nav>
+
+    <main>
+      <header>
+        <h1>Inline vs Inline-Block</h1>
+      </header>
+      <article>
+        <h2><code>inline</code></h2>
+        <p style="text-align: center">
+          <span style="background-color: var(--teal); color: var(--white)"
+            >inline</span
+          >
+          <span style="background-color: var(--teal); color: var(--white)"
+            >inline</span
+          >
+          <span style="background-color: var(--teal); color: var(--white)"
+            >inline</span
+          >
+        </p>
+        <p>
+          The <code>display</code> property specifies the display behaviour of
+          an element. Setting <code>display</code> can be used to control the
+          layout of an element.
+        </p>
+        <p>
+          Inline displays an element as an inline element. Any height and width
+          properties will have no effect.
+        </p>
+        <p>
+          The element will display 'inline', that is, on the same line. Inline
+          elements do <em>not</em> start on a new line and their width is equal
+          to their content. So any width or height settings will have no
+          effects.
+        </p>
+        <p>
+          There a number of HTML elements which have an
+          <code>inline</code> property by default:
+        </p>
+        <ul>
+          <li><code>span</code></li>
+          <li><code>a</code></li>
+          <li><code>img</code></li>
+        </ul>
+        <p>Formatting tags are also <code>inline</code>:</p>
+        <ul>
+          <li><code>em</code></li>
+          <li><code>code</code></li>
+          <li><code>strong</code></li>
+        </ul>
+        <h2><code>inline-block</code></h2>
+        <ul>
+          <li
+            style="
+              display: inline-block;
+              background-color: var(--teal);
+              color: var(--white);
+              height: 3em;
+            "
+          >
+            <span>inline-block</span>
+          </li>
+          <li
+            style="
+              display: inline-block;
+              background-color: var(--teal);
+              color: var(--white);
+            "
+          >
+            <span>inline-block</span>
+          </li>
+          <li
+            style="
+              display: inline-block;
+              background-color: var(--teal);
+              color: var(--white);
+              height: 5em;
+            "
+          >
+            <span>inline-block</span>
+          </li>
+        </ul>
+        <p>
+          <code>inline-block</code> displays an element as an inline-level block
+          container. You can set height and width values.
+        </p>
+        <p>
+          This can be distinguished from <code>block</code> as
+          <code>inline-block</code> does not start on a new line. A
+          <code>block</code> element will both start on a new line and occupy
+          the full width available. You can also set the width and height values
+          on a <code>block</code> element.
+        </p>
+        <p>
+          A common usage of <code>display: inline-block</code> is to display
+          list items horizontally instead of vertically. Like this:
+        </p>
+        <ul>
+          <li style="display: inline-block">
+            <span>Item 1</span>
+          </li>
+          <li style="display: inline-block">
+            <span><strong>Item 2</strong></span>
+          </li>
+          <li style="display: inline-block">
+            <span><em>Item 3</em></span>
+          </li>
+        </ul>
+      </article>
+    </main>
+
+    <footer>
+      <p>Created by <b>Brendan Jarvis</b>.</p>
+      <p>
+        This blog was made as part of the
+        <a href="https://devacademy.co.nz/">Dev Academy</a> curriculum.
+      </p>
+    </footer>
+  </body>
+</html>

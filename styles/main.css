@@ -18,7 +18,7 @@ body {
   font-family: 'Terminus', 'Monaco', 'Bitstream Vera Sans Mono', monospace; /* Switch to Monospace fonts */
   font-size: 16pt;
   line-height: 1.5;
-  text-align: center; /* Reset default text alignment */
+  text-align: center;
   background-color: var(--white);
 }
 
@@ -26,6 +26,10 @@ body {
 @media screen and (max-width: 768px) {
   body {
     font-size: 14pt; /* Reduce font size */
+  }
+
+  .nav-link {
+    font-size: 1.5em;
   }
 
   nav a {
@@ -38,7 +42,6 @@ body {
     color: var(
       --blue
     ) !important; /* Prevent override of color by link styling */
-    font-size: 1.5em;
     font-weight: bolder;
     text-decoration: none;
   }
@@ -53,6 +56,10 @@ body {
 /* This should target medium-sized display devices e.g. small screens and laptops */
 
 @media screen and (max-width: 1200px) {
+  .nav-link {
+    font-size: 1.5em;
+  }
+
   nav a {
     /* Switch to vertical navigation layout */
     display: block;
@@ -63,7 +70,6 @@ body {
     color: var(
       --blue
     ) !important; /* Prevent override of color by link styling */
-    font-size: 1.5em;
     font-weight: bolder;
     text-decoration: none;
   }
@@ -77,14 +83,26 @@ body {
 
 /* This should target larger displays e.g. desktops and TVs */
 @media screen and (min-width: 1201px) {
+  .nav-link {
+    font-size: 1.5em;
+  }
+  
+  nav h1 {
+    text-align: left;
+    display: inline-block;
+    margin-right: 1em; /* Add margin to push nav links to the right */
+  }
+
   nav a {
+    display: inline-block;
+    font-weight: bolder;
     background-color: var(--white);
     color: var(
       --teal
     ) !important; /* Prevent override of color by link styling */
-    font-size: 1.5em;
-    font-weight: bolder;
     text-decoration: none;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
   /* Invert colors of navigation links on hover */
@@ -189,7 +207,7 @@ h4 {
 
 /* Class to create rounded images with a thick cyan border */
 .thick-cyan-border {
-  border: 0px solid var(--aquamarine);
+  border: 1px solid var(--aquamarine);
   background-color: var(--aquamarine);
   border-radius: 50%;
   padding: 10px;

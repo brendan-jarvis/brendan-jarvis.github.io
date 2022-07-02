@@ -16,7 +16,7 @@
 body {
   color: var(--black);
   font-family: 'Terminus', 'Monaco', 'Bitstream Vera Sans Mono', monospace; /* Switch to Monospace fonts */
-  font-size: 16pt;
+  font-size: 16px;
   line-height: 1.5;
   text-align: center;
   background-color: var(--white);
@@ -24,10 +24,6 @@ body {
 
 /* This should target small-sized display devices e.g. mobile devices and tablets */
 @media screen and (max-width: 768px) {
-  body {
-    font-size: 14pt; /* Reduce font size */
-  }
-
   .nav-link {
     font-size: 1.5em;
   }
@@ -86,7 +82,7 @@ body {
   .nav-link {
     font-size: 1.5em;
   }
-  
+
   nav h1 {
     text-align: left;
     display: inline-block;

@@ -10,17 +10,34 @@
   </head>
 
   <body>
-    <nav>
-      <h1><a href="/index.html">Brendan Jarvis</a></h1>
-      <a href="/index.html" class="nav-link">Home</a>
-      <a href="/blog/blog.html" class="nav-link">Blog</a>
-    </nav>
+    <header>
+      <nav>
+        <h1><a href="/index.html">Brendan Jarvis</a></h1>
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/blog/blog.html" class="nav-link">Blog</a>
+      </nav>
+    </header>
 
     <main>
-      <header>
-        <h1>Inline vs Inline-Block</h1>
-      </header>
+      <h1>Inline vs Inline-Block</h1>
       <article>
+        <h2>Building blocks</h2>
+        <!-- Excerpt from Jon Duckett, HTML & CSS (1st Ed, Wiley, United States of America, 2011) at 361. -->
+        <p>
+          CSS treats each HTML element as if it is in its own box. This box will
+          either be a <code>block</code>-level box or an
+          <code>inline</code> box.
+        </p>
+        <p>
+          Block-level boxes start on a new line and act as the main building
+          blocks of any layout. You can control how much space a block-level box
+          takes up by setting the width of the box (and sometimes the height as
+          well).
+        </p>
+        <p>
+          These block-level boxes can be separated using borders, margins,
+          padding, and background colours.
+        </p>
         <h2><code>inline</code></h2>
         <p style="text-align: center">
           <span style="background-color: var(--teal); color: var(--white)"

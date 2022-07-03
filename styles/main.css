@@ -114,13 +114,18 @@ p {
   margin-bottom: 1em;
 }
 
-ul {
+ul,
+ol {
   margin-bottom: 1em;
+  margin-left: 1em; /* Indent list items same as justified p text */
+}
+
+ul {
+  list-style-type: square;
 }
 
 li {
   text-align: left;
-  margin-left: 1em; /* Indent list items same as justified p text */
 }
 
 header,

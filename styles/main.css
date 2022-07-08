@@ -1,5 +1,5 @@
-/* Import Lato font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* Import Roboto from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&family=Roboto+Slab&display=swap');
 
 /* Color scheme :root to setup CSS Variables */
 :root {
@@ -18,7 +18,7 @@
 
 body {
   color: var(--black);
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
@@ -26,7 +26,8 @@ body {
 }
 
 code {
-  font-family: 'Terminus', 'Monaco', 'Bitstream Vera Sans Mono', monospace; /* Switch to Monospace fonts */
+  font-family: 'Roboto Mono', monospace; /* Switch to Monospace fonts */
+  /* font-size: smaller; */
 }
 
 /* This should target small-sized display devices e.g. mobile devices and tablets */
@@ -208,6 +209,13 @@ img {
 }
 
 /* Style headers by changing their size, font-weight, and colours */
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto Serif', serif;
+}
+
 h1 {
   font-size: 2em;
   font-weight: bolder;

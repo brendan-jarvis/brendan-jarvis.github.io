@@ -1,3 +1,6 @@
+/* Import Lato font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 /* Color scheme :root to setup CSS Variables */
 :root {
   --teal: #2b6777;
@@ -15,11 +18,15 @@
 
 body {
   color: var(--black);
-  font-family: 'Terminus', 'Monaco', 'Bitstream Vera Sans Mono', monospace; /* Switch to Monospace fonts */
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   background-color: var(--white);
+}
+
+code {
+  font-family: 'Terminus', 'Monaco', 'Bitstream Vera Sans Mono', monospace; /* Switch to Monospace fonts */
 }
 
 /* This should target small-sized display devices e.g. mobile devices and tablets */
@@ -110,6 +117,21 @@ body {
 
 p {
   text-align: justify;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+blockquote {
+  text-align: left;
+  padding: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: var(--blue);
+}
+
+/* Style a blockquote attribution */
+.quote-citation {
+  text-align: right;
   margin-top: 1em;
   margin-bottom: 1em;
 }

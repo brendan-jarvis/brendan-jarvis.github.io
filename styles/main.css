@@ -230,3 +230,14 @@ a:link {
 a:visited {
   color: var(--aquamarine);
 }
+
+/* Create a repeating-radial-gradient of retro stripes */
+.retro-stripes {
+  background: repeating-radial-gradient(
+    circle at center,
+    #652e3b,
+    #ae4860 10px,
+    #de8b6f 10px,
+    #de8b6f 20px
+  );
+}

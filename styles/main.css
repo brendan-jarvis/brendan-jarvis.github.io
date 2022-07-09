@@ -27,7 +27,22 @@ body {
 
 code {
   font-family: 'Roboto Mono', monospace; /* Switch to Monospace fonts */
-  /* font-size: smaller; */
+  font-size: smaller;
+}
+
+button {
+  background-color: var(--teal);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--aquamarine);
 }
 
 /* This should target small-sized display devices e.g. mobile devices and tablets */

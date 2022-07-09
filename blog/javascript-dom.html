@@ -32,14 +32,15 @@
           HTML page. The top of the model is <code>dog</code>, an object which
           represents the whole <code>dog</code>. Beneath the
           <code>dog</code> object are nodes and each of these is another object:
-          e.g. <code>ears</code> with the attributes “big, floppy, and fluffy”.
+          e.g. <code>ears</code> with the attributes “big", "floppy", and
+          "fluffy”.
         </p>
         <p>
-          Much like a CSS style sheet a King Charles Cavalier Spaniel like Luna
-          have certain styles. Luna has a coat <code>color</code> of “Blenheim”,
-          an adult <code>height</code> of 30-33 cm, and her coat is silky with
-          moderate <code>length</code>. Among many more features to her
-          presentation.
+          Much like a CSS style sheet King Charles Cavalier Spaniels have
+          certain specified styles. Luna has a coat <code>color</code> of
+          “Blenheim”, an adult <code>height</code> of 30-33 cm, and her coat is
+          silky with moderate <code>length</code>. Among many more features to
+          her presentation.
         </p>
         <p>
           Luna has behaviours which operate like JavaScript instructions
@@ -73,6 +74,10 @@
           <code>hunting()</code>, <code>pointing()</code>, or simply
           <code>sleep()</code>.
         </p>
+        <p>
+          The pet parents will have to abide by Luna until the loop has
+          finished.
+        </p>
         <h2>The Document Object Model</h2>
         <!-- Describe what the DOM is and an example of how you might interact with it.  -->
         <blockquote>
@@ -82,8 +87,33 @@
           inconsistently implemented.
         </blockquote>
         <p class="quote-citation">
-          Excerpt From JavaScript: The Good Parts by Douglas Crockford.
+          Excerpt from <em>JavaScript: The Good Parts</em> by Douglas Crockford.
         </p>
+        <p>
+          The Document Object Model (‘DOM’) is a data representation of the
+          objects that comprise the structure and content of a document on the
+          web. The DOM is a programming interface that represents the page so
+          that programs can change the document structure, style, and content.
+        </p>
+        <p>
+          The page is received as HTML code sent by the web server. At the top
+          of the model is the document object, which represents the whole
+          document (the web page). Beneath the document object each box is
+          called a node, which is another object.
+        </p>
+        <p>
+          The DOM is a web API designed for the web browser to build websites
+          using their rendering and scripting engines. It can be accessed using
+          JavaScript, but the DOM is accessible independent of any particular
+          programming language. You can immediately start accessing the DOM
+          either through an inline <code> &lt;script&gt; </code> element or by
+          linking a script to the web page.
+        </p>
+        <p>
+          This could be as simple as a mildly annoying pop-up welcoming users to
+          your page:
+        </p>
+        <blockquote><code style="text-align: left !important;">&lt;body onload="alert('Welcome to my home page!');"&gt;</code><br><br><button onclick="alert('Welcome to my home page!');">See what this does</button></blockquote>
         <h2>Accessing data - arrays vs objects</h2>
         <!-- Explain the difference between accessing data from arrays and objects. -->
         <h2>The usefulness of functions</h2>

@@ -21,12 +21,12 @@
     <main>
       <h1>An Introduction to JavaScript</h1>
       <article>
-        <h2>HTML, CSS, & JavaScript</h2>
         <!-- An analogy to describe JavaScript and its relationship to HTML and CSS -->
         <img
           src="/images/Luna-walk.jpeg"
           alt="King Charles Cavalier Spaniel puppy outside for a walk."
         />
+        <h2>HTML, CSS, & JavaScript</h2>
         <p>
           Meet Luna. Luna is a dog. Dogs have a structure and elements, like an
           HTML page. The top of the model is <code>dog</code>, an object which
@@ -217,6 +217,84 @@
 
         <h2>The usefulness of functions</h2>
         <!-- Explain what functions are and why they are helpful -->
+        <p>
+          Generally programming is about factoring a task into a set of
+          functions and data structures. Functions let us store a single task in
+          a block of code, which we can use with a short command – rather than
+          having to re-enter the same code or manually repeat the same task
+          multiple times.
+        </p>
+
+        <p>A function in JavaScript looks like this:</p>
+        <blockquote>
+          <code
+            >function <span style="color: teal">myFunction</span>() {<br />
+            &nbsp;&nbsp;<span style="color: deeppink">//</span> code goes
+            here<br />
+            }</code
+          >
+        </blockquote>
+        <p>Here's how we can use the function:</p>
+        <blockquote>
+          <code><span style="color: teal">myFunction</span>();</code>
+        </blockquote>
+        <p>We may want to have a function that takes a parameter:</p>
+        <blockquote>
+          <code
+            >function <span style="color: teal">myFunction</span>(<span
+              style="color: maroon"
+              >input</span
+            >) {<br />
+            &nbsp;&nbsp;<span style="color: deeppink">alert</span>(<span
+              style="color: maroon"
+              >input</span
+            >)<br />
+            }</code
+          >
+        </blockquote>
+        <p>Which we will call and pass a parameter to:</p>
+        <blockquote>
+          <code
+            ><span style="color: teal">myFunction</span>(<span
+              style="color: maroon"
+              >'Hello World!'</span
+            >);</code
+          >
+          <br /><br /><button onclick="alert('Hello World!');">
+            See what this does
+          </button>
+        </blockquote>
+        <p>We can also pass multiple parameters to a function:</p>
+        <blockquote>
+          <code
+            >function <span style="color: teal">myFunction</span>(<span
+              style="color: maroon"
+              >input1</span
+            >, <span style="color: maroon">input2</span>) {<br />
+            &nbsp;&nbsp;<span style="color: deeppink">alert</span>(<span
+              style="color: maroon"
+              >input1</span
+            >
+            + <span style="color: maroon">input2</span>)<br />
+            }</code
+          >
+        </blockquote>
+        <p>Which we will call and pass two parameters to:</p>
+        <blockquote>
+          <code
+            ><span style="color: teal">myFunction</span>(<span
+              style="color: maroon"
+              >'Hello '</span
+            >, <span style="color: maroon">'World!'</span>);</code
+          >
+          <br /><br /><button onclick="alert('Hello World!');">
+            See what this does
+          </button>
+        </blockquote>
+        <p>
+          Functions are useful for re-using code and for keeping our code
+          <abbr title="Don't Repeat Yourself">DRY</abbr>.
+        </p>
       </article>
     </main>
 

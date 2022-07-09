@@ -113,9 +113,108 @@
           This could be as simple as a mildly annoying pop-up welcoming users to
           your page:
         </p>
-        <blockquote><code style="text-align: left !important;">&lt;body onload="alert('Welcome to my home page!');"&gt;</code><br><br><button onclick="alert('Welcome to my home page!');">See what this does</button></blockquote>
+        <blockquote>
+          <code style="text-align: left !important"
+            >&lt;<span style="color: deeppink">body</span>
+            <span style="color: teal">onload</span>="<span
+              style="color: magenta"
+              >alert</span
+            >('Welcome to my home page!');"&gt;</code
+          ><br /><br /><button onclick="alert('Welcome to my home page!');">
+            See what this does
+          </button>
+        </blockquote>
         <h2>Accessing data - arrays vs objects</h2>
         <!-- Explain the difference between accessing data from arrays and objects. -->
+        <h3>Arrays</h3>
+        <p>
+          The array is a list-like object for storing data. It allows us to
+          store multiple values under a single variable name. We can efficiently
+          loop through an array and access each value individually, doing the
+          same thing to every value. This is a more efficient storage method for
+          data than the alternative of storing every value in its own variable.
+          Arrays consist of square brackets and items separated by commas.
+        </p>
+        <p>Suppose that Luna wants to keep track of all of her toys:</p>
+        <blockquote>
+          <code
+            ><span style="color: deeppink">const</span>
+            <span style="color: teal">toys</span> = ['Kevin the Duck', 'Ranger',
+            'Yummy Rope', 'Tennis Ball', 'Orange Rubber Ball', 'Towel'];</code
+          >
+        </blockquote>
+        <p>
+          To access a value from the array we simply use the items index,
+          starting from 0. So:
+        </p>
+        <blockquote>
+          <code><span style="color: teal">toys</span>[0]</code> =
+          <code>'Kevin the Duck'</code><br />
+          <code><span style="color: teal">toys</span>[3]</code> =
+          <code>'Tennis Ball'</code><br />
+          <code><span style="color: teal">toys</span>[5]</code> =
+          <code>'Towel'</code>
+        </blockquote>
+        <h3>Objects</h3>
+        <p>
+          As you may have noticed by now most things are objects, including core
+          JavaScript features such as arrays and the DOM. We can create our own
+          objects as a collection of related data and/or functionality.
+        </p>
+        <p>We could use an object to store Luna’s characteristics:</p>
+        <blockquote>
+          <code
+            ><span style="color: deeppink">const</span>
+            <span style="color: teal">dog</span> = {<br />
+            <span style="color: teal">&nbsp;&nbsp;name</span>: 'Luna', <br />
+            <span style="color: teal">&nbsp;&nbsp;age</span>: '5 months', <br />
+            <span style="color: teal">&nbsp;&nbsp;breed</span>: 'King Charles
+            Cavalier Spaniel', <br />
+            <span style="color: teal">&nbsp;&nbsp;coatColour</span>: 'Blenheim',
+            <br />
+            <span style="color: teal">&nbsp;&nbsp;favouriteToy</span>: 'Kevin
+            the Duck' <br />
+            };</code
+          >
+        </blockquote>
+        <p>
+          To access a value in this object we use dot notation, the syntax looks
+          like this: <code>object.property</code>.
+        </p>
+        <p>For example:</p>
+        <blockquote>
+          <code
+            ><span style="color: teal">dog</span>.<span style="color: deeppink"
+              >name</span
+            ></code
+          >
+          = <code>'Luna'</code><br />
+          <code
+            ><span style="color: teal">dog</span>.<span style="color: deeppink"
+              >age</span
+            ></code
+          >
+          = <code>'5 months'</code><br />
+          <code
+            ><span style="color: teal">dog</span>.<span style="color: deeppink"
+              >breed</span
+            ></code
+          >
+          = <code>'King Charles Cavalier Spaniel'</code><br />
+          <code
+            ><span style="color: teal">dog</span>.<span style="color: deeppink"
+              >coatColour</span
+            ></code
+          >
+          = <code>'Blenheim'</code><br />
+          <code
+            ><span style="color: teal">dog</span>.<span style="color: deeppink"
+              >favouriteToy</span
+            ></code
+          >
+          = <code>'Kevin the Duck'</code>
+        </blockquote>
+
         <h2>The usefulness of functions</h2>
         <!-- Explain what functions are and why they are helpful -->
       </article>

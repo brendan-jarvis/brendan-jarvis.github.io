@@ -28,17 +28,28 @@
         <p>
           Dev Academy is such a fast-paced course that I keep having to review
           documentation for simple concepts like functions and objects. I was
-          blocked putting together the <code><span style="color: teal">enterScores</span>()</code> function for the
+          blocked putting together the
+          <code><span style="color: teal">enterScores</span>()</code> function
+          for the
           <a href="https://replit.com/@brendan-jarvis/JS-Gradebook#index.js"
             >JS-Gradebook project</a
           >.
         </p>
         <p>
           At first I Googled to get an idea for how I could do this and ‘tried
-          something’. This encouraged me to use the <code><span style="color: deeppink">Array</span>.<span style="color: teal">forEach</span>()</code> method, but
-          now I had to get it working. I still had an error message on my screen
-          (<code><span style="color: maroon">‘undefined’</span></code> – a classic of the genre), but it was not directing me
-          towards a way to solve my problem this time.
+          something’. This encouraged me to use the
+          <code
+            ><span style="color: teal">Array</span>.<span
+              style="color: deeppink"
+              >forEach</span
+            >()</code
+          >
+          method, but now I had to get it working. I still had an error message
+          on my screen (<code
+            ><span style="color: maroon">‘undefined’</span></code
+          >
+          – a classic of the genre), but it was not directing me towards a way
+          to solve my problem this time.
         </p>
         <p>
           So I went back to basics and reviewed the documentation for
@@ -48,8 +59,34 @@
           >. Then after having a read of that I closed my MacBook, put on my
           workout outfit, and went for a run. Thinking through how I can work
           with Objects while on the run, I thought of a solution to try when I
-          got back to the keyboard.
+          got back to the keyboard:
         </p>
+        <blockquote>
+          <code>
+            <span style="color: dodgerblue">function</span>
+            <span style="color: teal">enterScores</span>(<span
+              style="color: maroon"
+            >
+              gradebook, students, scores </span
+            >) { <br />
+            <span style="color: darkgreen">
+              &emsp;&emsp;// For each students[] element create in gradebook{} a
+              student{}
+              <br />
+              &emsp;&emsp;// Add scores[] to student{} using matching index
+            </span>
+            <br />
+            &emsp;&emsp;students.<span style="color: deeppink">forEach</span
+            >((<span style="color: maroon">name</span>, index) => { <br />
+            &emsp;&emsp;&emsp;&emsp;<span style="color: maroon">gradebook</span
+            >[<span style="color: maroon">name</span>] = { <br />
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;testScores:
+            <span style="color: maroon">scores</span>[index] <br />
+            &emsp;&emsp;&emsp;&emsp;} <br />
+            &emsp;&emsp;}) <br />
+            } <br />
+          </code>
+        </blockquote>
         <p>
           When I got back and tried out this new idea, it worked! The solution I
           thought of while “not working” on the task was exactly what I needed
@@ -58,32 +95,85 @@
         <h2>Elegantly solving a problem</h2>
         <p>
           JavaScript methods are perfect for solving problems in an elegant and
-          readable way. The first time I had this moment was when coding
+          readable way. The first time I had a moment where I (humbly) admired
+          the elegence of the code I had produced was when coding
           <a href="https://replit.com/@brendan-jarvis/Super-FizzBuzz#index.js"
             >SuperFizzBuzz</a
           >.
         </p>
         <p>
           FizzBuzz is a familiar challenge to anyone who has done a programming
-          course before – as it was for me. Reconstructing a decent <code><span style="color: deeppink">fizzbuzz</span>()</code>
+          course before – as it was for me. Reconstructing a decent
+          <code><span style="color: deeppink">fizzbuzz</span>()</code>
           function was rather straightforward. But then it was on to
           <code><span style="color: deeppink">super_fizzbuzz</span>()</code>.
         </p>
 
         <p>
-          Starting off I had to stop myself from recreating <code><span style="color: deeppink">fizzbuzz</span>()</code> again, I
-          have already created a <code><span style="color: deeppink">fizzbuzz</span>()</code> function, I should use it. So now I
-          have an array, that I want to iterate through, and for each element
-          call a function and then return the array with the results of calling
-          that function. Hmm, off to do some Googling.
+          Starting off I had to stop myself from recreating
+          <code><span style="color: deeppink">fizzbuzz</span>()</code> again, I
+          have already created a
+          <code><span style="color: deeppink">fizzbuzz</span>()</code> function,
+          I should use it. So now I have an array, that I want to iterate
+          through, and for each element call a function and then return the
+          array with the results of calling that function. Hmm, off to do some
+          Googling.
         </p>
         <p>
-          Google presents a few solutions using Array methods: <code><span style="color: teal">Array</span>.<span style="color: deeppink">every</span>()</code>,
-          <code><span style="color: teal">Array</span>.<span style="color: deeppink">forEach</span>()</code>, and <code><span style="color: teal">Array</span>.<span style="color: deeppink">map</span>()</code>. Wait, <code><span style="color: teal">Array</span>.<span style="color: deeppink">Map</span>()</code>! I just learned
-          about that and what it does, that is perfect! So now all that was left
-          was to work through how to use <code><span style="color: teal">Array</span>.<span style="color: deeppink">Map</span>()</code> in an arrow function and I
-          had <em>one beautiful line of code</em> – marvellous!
+          Google presents a few solutions using Array methods:
+          <code
+            ><span style="color: teal">Array</span>.<span
+              style="color: deeppink"
+              >every</span
+            >()</code
+          >,
+          <code
+            ><span style="color: teal">Array</span>.<span
+              style="color: deeppink"
+              >forEach</span
+            >()</code
+          >, and
+          <code
+            ><span style="color: teal">Array</span>.<span
+              style="color: deeppink"
+              >map</span
+            >()</code
+          >. Wait,
+          <code
+            ><span style="color: teal">Array</span>.<span
+              style="color: deeppink"
+              >Map</span
+            >()</code
+          >! I just learned about that and what it does, that is perfect! So now
+          all that was left was to work through how to use
+          <code
+            ><span style="color: teal">Array</span>.<span
+              style="color: deeppink"
+              >Map</span
+            >()</code
+          >
+          in an arrow function
         </p>
+
+        <blockquote>
+          <code>
+            <span style="color: dodgerblue">function</span>
+            <span style="color: teal">super_fizzbuzz</span>(<span
+              style="color: maroon"
+              >arrayParameter</span
+            >) {
+            <br />
+            &emsp;&emsp;<span style="color: royalblue">return</span>
+            <span style="color: maroon">arrayParameter</span>.<span
+              style="color: deeppink"
+              >map</span
+            >((element) => <span style="color: teal">fizzbuzz</span>(element))
+            <br />
+            }
+          </code>
+        </blockquote>
+
+        <p class="quote-citation">One <em>beautiful</em> line of code</p>
 
         <h2>
           How I feel using each of these problem-solving techniques/processes:
